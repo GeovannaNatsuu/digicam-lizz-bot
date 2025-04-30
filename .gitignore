@@ -1,0 +1,4 @@
+node_modules
+.wwwebjs_cache
+*.log
+.env
