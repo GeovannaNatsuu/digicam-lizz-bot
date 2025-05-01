@@ -2,11 +2,12 @@ const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth, Buttons, List, MessageMedia } = require('whatsapp-web.js');
 
 const client = new Client({
-    authStrategy: new LocalAuth(),
+    authStrategy: new LocalAuth({ dataPath: './.wwebjs_auth' }),
     puppeteer: {
         args: ['--no-sandbox', '--disable-setuid-sandbox']
     }
 });
+
 
 
 client.on('qr', qr => {
