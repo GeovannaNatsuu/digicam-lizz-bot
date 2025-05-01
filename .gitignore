@@ -2,3 +2,7 @@ node_modules
 .wwwebjs_cache
 *.log
 .env
+.wwebjs_auth/session/Default/IndexedDB/
+.wwebjs_auth/session/Default/Service Worker/
+.wwebjs_auth/session/Default/Code Cache/
+.wwebjs_auth/session/Default/Cache/
