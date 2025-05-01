@@ -22,7 +22,7 @@ const TEMPO_LIMITE_MS = 1000 * 60 * 10; // 10 minutos
 client.on('message', async msg => {
 
     if (
-        msg.body.match(/(menu|Menu|dia|tarde|noite|oi|oie|Oi|Olá|olá|ola|Ola)/i) &&
+        msg.body.match(/(menu|Menu|dia|tarde|noite|oi|Oi|Olá|olá|oie|ola|Ola)/i) filter-branch --force --index-filter 'git rm -r --cached --ignore-unmatch node_modules .wwwebjs_cache' --prune-empty --tag-name-filter cat -- --all|Oi|Olá|olá|ola|Ola)/i) &&
         msg.from.endsWith('@c.us')
     ) {
         const agora = Date.now();
